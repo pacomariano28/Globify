@@ -8,8 +8,8 @@ export default function Login() {
   const [isLoggedin, setIsLoggedin] = useState(false);
 
   const handleClick = () => {
-    const callbackUrl = `${window.location.origin}`;
-    const client_id = "248dfa5e8e794fc392b1d1ce569b6da9";
+    const callbackUrl = `http://localhost:5173/secure`;
+    const client_id = "42795664fac94d9c9b9c5652dc320701";
     const targetUrl = `https://accounts.spotify.com/authorize?response_type=token&client_id=${client_id}&redirect_uri=${encodeURIComponent(callbackUrl)}&scope=user-read-private%20user-read-email`;
     window.location.href = targetUrl;
   };
