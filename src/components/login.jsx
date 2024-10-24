@@ -2,7 +2,7 @@ import '../styles/login.css';
 
 export default function Login() {
 	const handleClick = () => {
-	  const callbackUrl = `http://localhost:5173/secure`;
+	  const callbackUrl = `http://localhost:5173/home`;
 	  const client_id = "248dfa5e8e794fc392b1d1ce569b6da9";
 	  const scopes = [
 		'ugc-image-upload',
@@ -24,7 +24,7 @@ export default function Login() {
 		'user-library-modify',
 		'user-read-email',
 		'user-read-private'
-	  ].join('%20'); // Unir los scopes con %20 (espacio URL-encoded)
+	  ].join('%20');
 	  const targetUrl = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${encodeURIComponent(callbackUrl)}&scope=${scopes}`;
 	  window.location.href = targetUrl;
 	};
