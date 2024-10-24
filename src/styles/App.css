@@ -1,3 +1,11 @@
+:root{
+	--dark: rgb(26, 25, 25);
+}
+
 * {
-	font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+	font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+main{
+	background-color: var(--dark);
 }

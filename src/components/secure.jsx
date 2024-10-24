@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../styles/secure.css'
 
 const Secure = () => {
 
@@ -7,7 +8,7 @@ const Secure = () => {
 			if (!accessToken) {
 				throw new Error('No access token provided');
 			}
-			const response = await fetch('https://api.spotify.com/v1/me', {
+			const response = await fetch('https://api.spotify.com/v1/me/top/tracks', {
 				headers: {
 					Authorization: 'Bearer ' + accessToken
 				}
@@ -39,10 +40,10 @@ const Secure = () => {
 	}, []);
 
 	return (
-		<div>
+		<section id='secure'>
 			<h1>Secure Page</h1>
 			<p>Welcome to the secure page!</p>
-		</div>
+		</section>
 	);
 };
 
