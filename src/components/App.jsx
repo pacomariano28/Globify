@@ -6,14 +6,14 @@ import Secure from './secure.jsx'
 function App() {
 
   return (
-	<>
+	<main>
 		<Router>
 			<Routes>
 				<Route path="/" element={<Login />} />
 				<Route path="/secure" element={<Secure />} />
 			</Routes>
 		</Router>
-	</>
+	</main>
   );
 }
 
