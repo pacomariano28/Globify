@@ -8,8 +8,12 @@ export default function Login() {
     window.location.href = targetUrl;
   };
   return (
-    <div>
-      <button onClick={handleClick}>Login with Spotify</button>
-    </div>
+	<section id="login" className="root">
+				<div>
+					<img alt="Globify icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/512px-Spotify_icon.svg.png?20220821125323"></img>
+					<h2>Globify</h2>
+				</div>
+				<button onClick={handleClick}>Login with Spotify</button>
+	</section>
   );
 }
