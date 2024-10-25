@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import '../styles/App.css'
+import '../styles/colors.css'
 import Login from './login.jsx'
-import Secure from './home.jsx'
-import Left from "./left.jsx";
+import Home from './home.jsx'
 
 function App() {
 
@@ -11,10 +11,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Login />} />
-					<Route path="/home" element={<Secure />} />
-					<Route path="/left" element={<Left />} />
-					{/* <Middle/>
-					<Right/> */}
+					<Route path="/home" element={<Home />} />
 				</Routes>
 			</Router>
 		</main>

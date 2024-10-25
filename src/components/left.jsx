@@ -1,8 +1,9 @@
+import '../styles/left.css'
 
 const Left = () => {
 	return (
 		<section>
-			<h3>Hola</h3>
+			<h2>aslkdhsalkdhsald</h2>
 		</section>
 	)
 }

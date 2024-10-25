@@ -1,0 +1,10 @@
+#home{
+	height: 100vh;
+	color: var(--dark);
+	display: flex;
+	flex-direction: column;
+
+	main{
+		display: flex;
+	}
+}
