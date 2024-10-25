@@ -15,7 +15,7 @@ const Footer = () => {
         fetchPlayer();
     const interval = setInterval(() => {
       fetchPlayer();
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(interval);
     }, []);
