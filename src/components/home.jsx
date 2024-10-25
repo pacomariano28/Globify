@@ -3,6 +3,7 @@ import '../styles/home.css'
 import '../styles/App.css'
 import Navbar from './navbar.jsx';
 import Left from "./left.jsx";
+import Footer from './footer.jsx';
 
 const Secure = () => {
 	useEffect(() => {
@@ -31,6 +32,7 @@ const Secure = () => {
 			<main>
 				<Left />
 			</main>
+			<Footer />
 		</section>
 	);
 };

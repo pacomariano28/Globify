@@ -1,8 +1,8 @@
 #home{
-	height: 100vh;
 	color: var(--dark);
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	min-height: 100dvh;
+	grid-template-rows: auto 1fr auto;
 
 	main{
 		display: flex;

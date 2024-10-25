@@ -23,7 +23,6 @@ const Navbar = () => {
 				<input type="text" placeholder='¿Qué quieres reproducir?' />
 			</div>
 			<img src={photoUrl} />
-			{/* <button onClick={getProfile}>aprietame</button> */}
 		</header>
 	)
 }
