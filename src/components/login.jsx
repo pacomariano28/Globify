@@ -3,7 +3,8 @@ import '../styles/login.css';
 export default function Login() {
 	const handleClick = () => {
 	  const callbackUrl = `http://localhost:5173/home`;
-	  const client_id = "42795664fac94d9c9b9c5652dc320701";
+	  /* const client_id = "42795664fac94d9c9b9c5652dc320701"; MARCOS*/
+	  const client_id = "248dfa5e8e794fc392b1d1ce569b6da9";
 	  const scopes = [
 		'ugc-image-upload',
 		'user-read-recently-played',

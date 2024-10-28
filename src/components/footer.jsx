@@ -13,11 +13,11 @@ const Footer = () => {
 
     useEffect(() => {
         fetchPlayer();
-    const interval = setInterval(() => {
-      fetchPlayer();
-    }, 500);
+        const interval = setInterval(() => {
+            fetchPlayer();
+        }, 500);
 
-    return () => clearInterval(interval);
+        return () => clearInterval(interval);
     }, []);
 
     const handleRangeChange = (e) => {
@@ -42,19 +42,19 @@ const Footer = () => {
                 <div id="control-panel">
                     <button id="previous">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 18L9 12L15 6V18Z" fill="currentColor"/>
-                            <path d="M9 18V6H7V18H9Z" fill="currentColor"/>
+                            <path d="M15 18L9 12L15 6V18Z" fill="currentColor" />
+                            <path d="M9 18V6H7V18H9Z" fill="currentColor" />
                         </svg>
                     </button>
                     <button id="play">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
                         </svg>
                     </button>
                     <button id="next">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 18L15 12L9 6V18Z" fill="currentColor"/>
-                            <path d="M15 18V6H17V18H15Z" fill="currentColor"/>
+                            <path d="M9 18L15 12L9 6V18Z" fill="currentColor" />
+                            <path d="M15 18V6H17V18H15Z" fill="currentColor" />
                         </svg>
                     </button>
                 </div>
